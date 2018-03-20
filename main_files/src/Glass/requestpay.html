@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+</head>
+<style>
+ body {
+  font: Lato, sans-serif;
+  margin-top: 180px;
+  background:#333;
+  color:#FFF;
+ }
+.btn {
+  margin-top: 100px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+.btn-space {
+    margin-right: 25px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn {
+    padding: 25px 24px;
+    border: 0 none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.modalbg{
+  color: #333;
+  border: 1px solid transparent;
+  padding: 25px 24px;
+  border-radius: 4px;
+  height: 450px;
+}
+.modal-dialog-centered {
+    max-width: 60% !important;
+}
+</style>
+<script type="text/Javascript" src="js/main.js"></script>
+<body>
+
+<div class="container">
+  <h2 class="display-3 text-center mb-5">Contract Control Panel</h2>
+  <div class="row"> 
+  <div class="col" Style="margin-left: 180px;">
+  <!-- Button to Open the Modal -->
+  <div class="col-sm-12 text-center">
+  <button type="button" class="btn btn-success btn-md center-block btn-space" Style="width: 285px;" data-toggle="modal" data-target="#myModal">
+    Request Fund
+  </button>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="modal-title ml-2" Style="font-size:28px; letter-spacing: 1px; color:#333;">REQUEST FUND</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      
+        <!-- Modal body -->
+        <div class="modal-body modalbg">
+          <p Style="font-size:25px; font-weight:500">Which phase do you want the fund for?</p>
+          <div class="checkbox">
+          <div class="container">
+           <div class="row">
+           <font size="3">
+           <label class="radio-inline"><input type="radio" name="optradio"> PHASE 1</label>
+           <label class="radio-inline mr-5 ml-5"><input type="radio" name="optradio"> PHASE 2</label>
+           <label class="radio-inline"><input type="radio" name="optradio"> PHASE 3</label><br><br>
+           </font>
+           </div>
+          </div>
+          </div>
+
+          <p Style="font-size:25px; font-weight:500">Description:</p>
+          <textarea class="form-control" rows="5" cols="90" id="reqdesc" placeholder="Enter Description"></textarea>
+          <br>
+          <p Style="font-size:25px; font-weight:500">Amount:</p>
+          <input type="text" class="form-control label" id="reqamt" placeholder="Enter Amount">
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-success " onClick="confirmreq()">Request</button>
+          
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col" Style="margin-right: 150px;">
+  <div class="col-sm-12 text-center offset-md-0.1">
+        <input type="button" class="btn btn-success btn-md center-block btn-space" Style="width: 285px;" value="Pass a Fund" onClick="window.location = 'passfund.html' ">
+  </div>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Pass Fund</title>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="bower_components/web3/dist/web3.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<style>
+ body {
+ 	font: Lato, sans-serif;
+ 	margin-top: 150px;
+    background:#333;
+    color:#FFF;
+ } 
+ h2 {
+      font-size: 20px;
+      color: #FFF;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+.btn {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+.btn-space {
+    margin-right: 25px;
+}
+.btn {
+    padding: 25px 24px;
+    border: 0 none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.label {
+	padding: 6px 12px;
+	border: 1px solid transparent;
+    border-radius: 4px;
+	letter-spacing: 1px;
+	color: #000;
+}
+</style>
+<script type="text/Javascript" src="js/main.js"></script>
+<script type="text/Javascript" src="js/main.js"></script>
+
+</head>
+<body>
+	
+    <div class="container">
+    <div class="row">
+   	<div class="col-md-10 offset-md-1">
+   	<h2 class="display-3 text-center mb-4">Pass Fund</h2>
+	<form>
+    <div class="form-group">
+    	<font size="5"><label for="from_address">From Address:</label></font>
+      	<input type="text" class="form-control label" id="from_address" placeholder="Enter ID">
+    </div>
+    <div class="form-group">
+      	<font size="5"><label for="to_address">To Address:</label></font>
+      	<input type="text" class="form-control label" id="to_address" placeholder="Enter ID">
+    </div>
+    <div class="form-group">
+      	<font size="5"><label for="amount">Enter Amount:</label></font>
+      	<input type="text" class="form-control label" id="amount" placeholder="Enter Amount">
+    </div>
+        <script  type="text/javascript" type="module">
+        var Web3 = require('web3')
+function passfund()
+{
+	console.log('starting...');
+
+
+    var Web3 = require('web3');
+    var web3 = new Web3();
+    web3.setProvider(new web3.providers.HttpProvider("http://localhost:8545"));
+web3.eth.defaultAccount=web3.eth.accounts[0];
+    var account1 = document.getElementById("from_address").values;
+   var  account2 = document.getElementById("to_address").value;
+    web3.eth.sendTransaction({from:account1
+,to:account2,value:'1'});
+window.alert("Fund  Transferred  succesfully")
+window.location = "welcome.html"
+
+}
+        </script>
+   <div class="col-sm-12 text-center offset-md-0.1">
+        <input type="button" class="btn btn-success btn-md center-block btn-space" Style="width: 285px;" value="Send" onClick="passfund()">
+
+
+
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

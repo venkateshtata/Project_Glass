@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Contract Description</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<style>
+ body {
+ 	font: Lato, sans-serif;
+ 	
+    background:#333;
+    color:#FFF;
+ } 
+ h2 {
+      font-size: 60px;
+      color: #FFF;
+      font-weight: 300;
+      margin-top: 30px;
+  }
+.btn {
+  margin-top: 100px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 100;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+.btn-space {
+    margin-right: 25px;
+}
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn {
+    padding: 25px 24px;
+    border: 0 none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.alignright{
+  margin-right: 110px;
+}
+.label {
+  padding: 15px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  color: #000;
+}
+</style>
+<script type="text/Javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+  <div class="row">
+      <h2 class="text-left">Contract Description</h2><br>
+      <font size="4" face="verdana"><p>A contract is a voluntary arrangement between two or more parties that is enforceable by law as a binding legal agreement. Contract is a branch of the law of obligations in jurisdictions of the civil law tradition. Contract law concerns the rights and duties that arise from agreements.<br>
+      A contract arises when the parties agree that there is an agreement. Formation of a contract generally requires an offer, acceptance, consideration, and a mutual intent to be bound. Each party to a contract must have capacity to enter the agreement. Minors, intoxicated persons, and those under a mental affliction may have insufficient capacity to enter a contract. Some types of contracts may require formalities, such as a memorialization in writing.</p></font>
+	<form>
+    <div class="container">
+     <div class="row">
+     <div class="col alignright"><font size="5"><label for="p1"><br>PHASE 1 :</label></font>
+     <textarea class="form-control" rows="5" cols="90" id="p1" placeholder="Enter Phase 1 Description"></textarea></div>
+     
+     <div class="col"><font size="5"><label for="amt1"><br><br>Enter Amount For Phase 1 :</label></font>
+     <input type="text" class="form-control label" id="amt1" placeholder="Enter Amount"></div>
+     </div>
+    </div>
+
+
+    <div class="container">
+     <div class="row">
+     <div class="col alignright"><font size="5"><label for="p2"><br>PHASE 2 :</label></font>
+     <textarea class="form-control" rows="5" cols="90" id="p2" placeholder="Enter Phase 2 Description"></textarea></div>
+ 
+     <div class="col"><font size="5"><label for="amt2"><br><br>Enter Amount For Phase 2 :</label></font>
+     <input type="text" class="form-control label" id="amt2" placeholder="Enter Amount"></div>
+     </div>
+    </div>
+
+
+    <div class="container">
+     <div class="row">
+     <div class="col alignright"><font size="5"><label for="p3"><br>PHASE 1 :</label></font>
+     <textarea class="form-control" rows="5" cols="90" id="p3" placeholder="Enter Phase 3 Description"></textarea></div>
+     
+     <div class="col"><font size="5"><label for="amt3"><br><br>Enter Amount For Phase 3 :</label></font>
+     <input type="text" class="form-control label" id="amt3" placeholder="Enter Amount"></div>
+     </div>
+    </div>
+
+    <div class="col-sm-12 text-center offset-md-0">
+    <input type="button" class="btn btn-success btn-md center-block btn-space " Style="width: 280px;" value="Propose Bid" onClick="confirmbid()">
+    </div>
+    
+    </div>
+    </div>   
+    </form>
+</body>
+</html>

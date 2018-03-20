@@ -1,0 +1,13 @@
+{
+ "dependencies": {
+  "ansi": "^0.3.1",
+  "npm": "^5.7.1",
+  "web3": "^0.17.0-alpha"
+ },
+ "scripts": {
+  "start": "npm run build"
+ },
+ "devDependencies": {
+  "webpack": "^4.1.1"
+ }
+}
